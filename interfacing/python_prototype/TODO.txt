@@ -1,0 +1,14 @@
+Link interfacing process to subprocesses
+    DONE
+Clean up the code and document
+    DONE
+Terminate child processes upon completion
+    DONE
+Deal with inputting "l" error
+    DONE
+Invalid input handling
+    DONE
+Do proper communication between processes rather than wait 25s for startup to finish
+    Considering switching to oo, have all code under one program/process, rather than spawning multiple subprocesses
+Change interfacer to arm and takeoff on command rather than automatically
+Dynamic input of files rather than hardcoding it in
