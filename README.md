@@ -6,10 +6,10 @@ To rotate press:
 
 (left | right) && (up | down)
 
-for in and out
+to move in and out
 (m | n) 
 
-for move left, right, up, down
+to move left, right, up, down
 use arrow keys 
 
 
