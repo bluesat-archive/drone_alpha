@@ -1,3 +1,10 @@
+pathfinding.py
+use mouse to place walls
+click start to start the algo
+
+
+
+matxRotate.py
 crappy reverse SLAM
 
 To rotate press:
