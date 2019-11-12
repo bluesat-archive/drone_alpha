@@ -10,16 +10,17 @@ pygame.init()
 gray = (115, 115, 115)
 black = (0, 0, 0)
 red = (255, 0, 0)
+orange = (255, 255, 0)
 blue = (0, 0, 255)
 green = (0, 255, 0)
-lightGreen = (155, 255, 0)
+lightGreen = (0, 155, 0)
 yellow = (255, 255, 0)
 white = (255, 255, 255)
 
 display_width = 1300
 display_height = 900
 
-pointSize = 30
+pointSize = 20
 
 gridWidth = display_width // pointSize
 gridHeight = display_height // pointSize
@@ -141,8 +142,8 @@ def gameLoop():
     print(graph[gridWidth])
     counter = 0
 
-    endNode = 0
-    startNode = len(graph)-1
+    startNode = 0
+    endNode = len(graph)-1
     path = np.full((len(graph)), -1)
     path[startNode] = startNode
     dist = np.full((len(graph)), len(graph))
@@ -170,7 +171,7 @@ def gameLoop():
                 walls[index] = 1
             if (path[index] != -1 and index != startNode and index != endNode):
                 #visited
-                nodes[index].changeColor(yellow)                
+                nodes[index].changeColor(orange)
             #else :
             #    node.changeColor(blue)
             nodes[index].draw(gameDisplay)
